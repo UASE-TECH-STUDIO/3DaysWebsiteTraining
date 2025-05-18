@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdullahi Mustapha | Web Developer Portfolio</title>
+    <meta name="description" content="A responsive portfolio website for Abdullahi Mustapha, showcasing web development projects in HTML and CSS.">
+    <meta name="keywords" content="Abdullahi Mustapha, Usty, web developer, portfolio, HTML, CSS, responsive design, web design, UASE Tech Studio">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+            <h1 class="site-title">Abdullahi Mustapha</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="container hero-content">
+            <p class="hero-intro">Hello, I'm</p>
+            <h2 class="hero-name">Abdullahi Muhammed Mustapha</h2>
+            <p class="hero-tagline">Crafting responsive and engaging web experiences with HTML & CSS.</p>
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container about-content">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="images/profile.jpg" alt="Abdullahi Mustapha Profile Picture">
+                </div>
+                <div class="about-text">
+                    <p>I am Abdullahi Mustapha, a passionate web development enthusiast currently being coached by UASE Tech Studio. My journey into web design began with a fascination for how websites are built and the desire to create beautiful, functional digital experiences.</p>
+                    <p>I specialize in using HTML to structure content and CSS to bring designs to life. I love the challenge of transforming ideas into responsive web pages that look great on any device, from large desktops to mobile phones.</p>
+                    <p>When I'm not coding, you can find me exploring new tech trends, reading about design principles, or contributing to open-source projects. I'm always eager to learn and grow, and I believe in the power of continuous improvement in the ever-evolving world of web development.</p>
+                    <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-grid">
+
+                <div class="project-card">
+                    <img src="images/project1.png" alt="Project 1 Screenshot: Basic Landing Page">
+                    <div class="project-info">
+                        <h3>Basic Landing Page</h3>
+                        <p>A clean and modern landing page featuring a hero section, feature list, and call-to-action, built entirely with HTML and CSS.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-project" target="_blank">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="btn btn-project" target="_blank">GitHub Repo <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/project2.png" alt="Project 2 Screenshot: Simple Blog Layout">
+                    <div class="project-info">
+                        <h3>Simple Blog Layout</h3>
+                        <p>A responsive blog layout demonstrating article structure, image integration, and basic navigation styling.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-project" target="_blank">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="btn btn-project" target="_blank">GitHub Repo <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/project3.png" alt="Project 3 Screenshot: Product Showcase Grid">
+                    <div class="project-info">
+                        <h3>Product Showcase Grid</h3>
+                        <p>A dynamic product display grid showcasing various items with responsive scaling, built using Flexbox for layout.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-project" target="_blank">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="btn btn-project" target="_blank">GitHub Repo <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/project4.png" alt="Project 4 Screenshot: Interactive Form Design">
+                    <div class="project-info">
+                        <h3>Interactive Form Design</h3>
+                        <p>A user-friendly contact form with styled inputs, placeholder text, and a submit button, focusing on accessibility.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-project" target="_blank">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="btn btn-project" target="_blank">GitHub Repo <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <form action="https://formspree.io/f/your_form_id" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Your message here..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+            <div class="social-links">
+                <p>Find me on:</p>
+                <a href="https://github.com/yourusername" target="_blank" title="GitHub Profile"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Abdullahi Mustapha. Powered by UASE Tech Studio.</p>
+            <p>All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

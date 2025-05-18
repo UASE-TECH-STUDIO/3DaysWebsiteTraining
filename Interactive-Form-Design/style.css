@@ -1,0 +1,133 @@
+/* Basic Reset & Typography */
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #eef2f5;
+    display: flex; /* Use flexbox to center content */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in element's total width/height */
+}
+
+.form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px; /* Max width for the form */
+    width: 100%; /* Occupy full width within max-width */
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 2.2em;
+}
+
+p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block; /* Make labels take full width */
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 700;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+    color: #333;
+    background-color: #f9f9f9;
+    box-sizing: border-box; /* Crucial for width: 100% with padding */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+    color: #999;
+    opacity: 1; /* Firefox default opacity for placeholders is lower */
+}
+
+/* Focus state for accessibility and UX */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #3498db; /* Blue border on focus */
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.3); /* Subtle glow */
+    outline: none; /* Remove default browser outline */
+    background-color: white; /* Clear background on focus */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing but not horizontal */
+    min-height: 100px;
+}
+
+/* Submit Button */
+.submit-btn {
+    display: block; /* Make button full width */
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #3498db; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #2980b9; /* Darker Blue */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.submit-btn:active {
+    transform: translateY(0); /* Press down effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 25px;
+        margin: 10px; /* Add some margin on very small screens */
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    .submit-btn {
+        padding: 10px;
+        font-size: 0.95em;
+    }
+}

@@ -1,0 +1,191 @@
+/* Basic Reset & Typography */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.blog-header {
+    background-color: #2c3e50; /* Dark Blue */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.blog-header h1 {
+    font-family: 'Playfair Display', serif;
+    margin: 0 0 10px;
+    font-size: 2.8em;
+    color: white;
+}
+
+.blog-header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox for navigation */
+    justify-content: center;
+    gap: 20px;
+}
+
+.blog-header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.blog-header nav a:hover {
+    color: #3498db; /* Blue on hover */
+}
+
+/* Main Content Layout */
+.blog-main {
+    display: flex; /* Use flexbox for main content and sidebar */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 30px; /* Space between main content and sidebar */
+}
+
+.blog-posts {
+    flex: 3; /* Blog posts take up 3 parts */
+    min-width: 600px; /* Minimum width before flex-wrap breaks layout */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.sidebar {
+    flex: 1; /* Sidebar takes up 1 part */
+    min-width: 250px; /* Minimum width before flex-wrap breaks layout */
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+.sidebar h3 {
+    color: #2c3e50;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    color: #2980b9;
+}
+
+/* Blog Post Styling */
+.post {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.post:last-child {
+    border-bottom: none; /* No border for the last post */
+}
+
+.post h2 {
+    font-family: 'Playfair Display', serif;
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: left; /* Override header default */
+}
+
+.post-meta {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: -5px; /* Pull closer to heading */
+    margin-bottom: 20px;
+    text-align: left; /* Override paragraph default */
+}
+
+.post img {
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+    display: block; /* Remove extra space below image */
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.post p {
+    text-align: left; /* Override paragraph default */
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #2980b9;
+}
+
+/* Footer */
+.blog-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .blog-main {
+        flex-direction: column; /* Stack main content and sidebar vertically */
+        align-items: center;
+    }
+
+    .blog-posts, .sidebar {
+        min-width: unset; /* Remove min-width to allow full width */
+        width: 100%; /* Take full width */
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .blog-header h1 {
+        font-size: 2em;
+    }
+
+    .blog-header nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        gap: 10px;
+        margin-top: 15px;
+    }
+}
