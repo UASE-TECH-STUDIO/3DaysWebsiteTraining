@@ -15,14 +15,11 @@ A responsive product showcase grid built with HTML and CSS Flexbox. This project
 
 ## How to Run
 
-1. Clone the repository: `git clone https://github.com/YourUsername/product-showcase-grid.git`
-2. Navigate to the project directory: `cd product-showcase-grid`
+1. Clone the repository: `git clone https://github.com/UASE-TECH-STUDIO/Product-Showcase-Grid.git`
+2. Navigate to the project directory: `cd Product-Showcase-Grid`
 3. Open `index.html` in your web browser.
 
 ## Live Demo
 
-[Link to your GitHub Pages live demo here]
+[https://uase-tech-studio.github.io/3DaysWebsiteTraining/Product-Showcase-Grid/]
 
-## Screenshot
-
-(Add your project screenshot here)

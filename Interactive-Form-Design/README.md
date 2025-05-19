@@ -15,14 +15,11 @@ A clean and user-friendly contact form designed with a focus on HTML structure, 
 
 ## How to Run
 
-1. Clone the repository: `git clone https://github.com/YourUsername/interactive-form-design.git`
-2. Navigate to the project directory: `cd interactive-form-design`
+1. Clone the repository: `git clone https://github.com/UASE-TECH-STUDIO/Interactive-Form-Design.git`
+2. Navigate to the project directory: `cd Interactive-Form-Design`
 3. Open `index.html` in your web browser.
 
 ## Live Demo
 
-[Link to your GitHub Pages live demo here]
+[https://uase-tech-studio.github.io/3DaysWebsiteTraining/Simple-Blog-Layout/]
 
-## Screenshot
-
-(Add your project screenshot here)

@@ -15,14 +15,13 @@ A simple, clean, and modern landing page built using only HTML and CSS. This pro
 
 ## How to Run
 
-1. Clone the repository: `git clone https://github.com/YourUsername/basic-landing-page.git`
-2. Navigate to the project directory: `cd basic-landing-page`
+1. Clone the repository: `git clone https://github.com/UASE-TECH-STUDIO/Basic-Landing-Page.git`
+2. Navigate to the project directory: `cd Basic-Landing-Page`
 3. Open `index.html` in your web browser.
 
 ## Live Demo
 
-[Link to your GitHub Pages live demo here]
+[https://uase-tech-studio.github.io/3DaysWebsiteTraining/Basic-Landing-Page/]
 
-## Screenshot
 
-(Add your project screenshot here)
+
